@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Beattingvile";
+  src: url('Beattingvile.woff') format('truetype');
+}
+
+@font-face {
+  font-family: "Hickory";
+  src: url('Hickory_Jack.ttf') format('truetype');
+}
+
+html {
+  width: 100%;
+  font-family: "Beattingvile";
+  font-size: 40pt;
+  background-image: url("pixels.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+body {
+  width: 70%;
+  height: 100%;
+  clear: none;
+  float: none;
+  line-height: 1.4;
+  margin-left: 10%;
+}
+
+body {
+  display: block;
+}
+
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 80px;
+  float: right;
+  padding-bottom: 100px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+nav {
+	width: 15%;
+	float: left;
+	margin-right: 25px;
+  margin-left: 25px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  list-style: none;
+}
+
+
+nav #internal_links {
+	list-style: none;
+	list-style-image: url("icons8-list-view-24.png");
+	margin-top: 25px;
+  margin-left: 25px;
+	padding: 0;
+}
+
+
+article {
+  font-family: "Hickory";
+  text-align: center;
+}
+
+
+.bio_flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 75%;
+  clear: right;
+}
+
+.bio_flex #bio {
+  margin-bottom: 150px;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 50px;
+  font-size: 40pt;
+  font-weight: bold;
+}
+
+thead {
+  font-weight: bolder;
+  font-size: 50pt;
+}
+
+ td {
+  font-size: 35pt;
+}
+
+.tables {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 100%;
+  opacity: 0.6;
+}
+
+#table1 {
+  margin-left: 150px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  table-layout: fixed;
+}
+
+
+
+#table2 {
+  margin-left: 200px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  table-layout: fixed;
+}
+
+
+#courses {
+  clear: both;
+  text-align: center;
+  font-size: 60pt;
+}
+
+.projects_flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 1000px;
+  clear: both;
+}
+
+ #projects {
+  margin-top: 25px;
+  clear: both;
+}
+
+#list_projects {
+  list-style: none;
+  clear: both;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.6em;
+	margin-top: 4%;
+	border-top: 3px outset #cf7b79;
+	clear: both;
+	padding-bottom: 20px;
+}
